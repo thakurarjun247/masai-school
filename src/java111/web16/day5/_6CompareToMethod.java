@@ -1,4 +1,4 @@
-package day5;
+package java111.web16.day5;
 
 public class _6CompareToMethod {
     public static void main(String[] args) {

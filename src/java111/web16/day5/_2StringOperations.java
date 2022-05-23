@@ -1,6 +1,4 @@
-package day5;
-
-import java.util.Locale;
+package java111.web16.day5;
 
 public class _2StringOperations {
     public static void main(String[] args) {
