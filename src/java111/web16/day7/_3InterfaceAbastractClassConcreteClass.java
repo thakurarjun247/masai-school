@@ -23,8 +23,10 @@ class Fish implements IAnimal{
 class Dolphin extends Fish{
     @Override // warning sign: sharp turn ahead
     public void move(){
+
         System.out.println("moving by swimming and jumping");
     }
+
 }
 class BlueDolphin extends Dolphin{
   @Override // warning sign: sharp turn ahead
