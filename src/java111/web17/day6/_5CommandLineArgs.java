@@ -1,4 +1,4 @@
-package java111.web16.day6;
+package java111.web17.day6;
 
 public class _5CommandLineArgs {
     public static void main(String[] args) {

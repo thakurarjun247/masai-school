@@ -1,4 +1,4 @@
-package java111.web16.day7;
+package java111.web17.day7;
 
 public class _4HeirarchicalInheritence {
     public static void main(String[] args) {
