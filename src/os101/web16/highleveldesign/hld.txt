@@ -1,0 +1,23 @@
+HLD Introduction:
+Hashing, Cashing, Load Balancing, Auto scaling,
+Hashing
+
+Hashing=>
+input : anything
+hash function
+output of fixed length integer (0-9)
+
+90 chocolates among 10 kids
+almost equal distribution
+Load Balancing:
+10 to 99
+10,11, 12, 13...51,52
+0, 1, 2, 3       1, 2
+last digit of this number
+
+Cashing:
+
+
+Autoscaling: Zookeeper (70%)
+
+image/container:configuration(ram, software)
