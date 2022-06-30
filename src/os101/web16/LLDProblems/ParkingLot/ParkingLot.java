@@ -1,7 +1,5 @@
 package os101.web16.LLDProblems.ParkingLot;
 
-import PL.ParkingSpot;
-
 import java.util.List;
 
 //Design a parking lot using OOP.
@@ -11,20 +9,24 @@ import java.util.List;
 * identify the core objects = Person, Lot, floors, levels, vehicle, vehicleType, spot, row.
 * Identify the relationships.
 * Design Patterns
-* Implementation - full working code (two parts - tomorrow )
+* Implementation - full working code (identify abstractions, relationships, concrete classes and methods
+* with signature and not with the full implementation)
 * */
-public class ParkingLot {
-}
+
 
 abstract class Vehicle{
      VehicleSize vehicleSize;
+     boolean isParked;
      String licencePlate;
      int spotsNeeded;
      List<ParkingSpot> parkingSpots;
 
      //methods?
     public void parkInSpot(ParkingSpot parkingSpot){
-        parkingSpots.add(parkingSpot);
+        if(!isParked) {
+            parkingSpots.add(parkingSpot);
+            isParked = true;
+        }
     }
 
     public void clearSpots(){
@@ -50,5 +52,48 @@ class Car extends Vehicle{
 enum VehicleSize{
     MOTORCYCLE, COMPACT, LARGE
 }
-class ParkingSpot{}
+//TODO: complete this
+public class ParkingLot {
+    Level[] levels;
+    final int NUM_LEVELS=5;
+
+}
+class Level{
+    int floor;
+    ParkingSpot[] spots;
+    boolean isAvailable;
+    int findAvailableSpot(Vehicle vehicle){
+        return 0;
+    }
+}
+class ParkingSpot{ //11
+    VehicleSize vehicleSize;
+    int spotNumber;
+    int row;
+    Level level;
+    boolean isAvailable;
+    Vehicle vehicleParkedThere;
+    ParkingSpot(Level level, int row, VehicleSize vehicleSize, int spotNumber ){
+        row=2;
+        isAvailable=true;
+    }
+    boolean park(Vehicle vehicle){
+        if(!isAvailable || !vehicle.canFitInSpot(this))
+            return  false;
+        isAvailable=false;
+        this.vehicleParkedThere=vehicle;
+
+        vehicle.isParked=true;
+        return true;
+    }
+    boolean removeVehicle(Vehicle vehicle){
+        vehicle.isParked=false;
+        this.isAvailable=true;
+        this.vehicleParkedThere=null;
+        vehicle.clearSpots();
+        return true;
+    }
+
+
+}
 
