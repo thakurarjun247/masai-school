@@ -1,1 +1,19 @@
 Maps, Generics
+Maps
+K,V
+name -> phoneNumber
+Delhi -> India
+
+1, "one"
+2, "two"
+
+search, insert, delete => O(1)
+
+Hashing: some range -> fixed set of values
+% function -> hash function.
+1 to 5 -> hash value
+
+Good hash function:
+1. Large output space.
+2. Values don't collide.
+
