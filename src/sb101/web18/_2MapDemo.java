@@ -28,7 +28,7 @@ public class _2MapDemo {
         }
 
         //todo: we will learn the syntax later.
-        
+
         entrySet
                 .forEach(myEntry -> System.out.println(myEntry.getKey()+" ---> "+myEntry.getValue()));
 
