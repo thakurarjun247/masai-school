@@ -1,4 +1,4 @@
-package sb101.web18;
+package sb101.web18.day1.maps;
 
 public class _1Hashing {
     public static void main(String[] args) {

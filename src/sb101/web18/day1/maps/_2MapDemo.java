@@ -1,4 +1,4 @@
-package sb101.web18;
+package sb101.web18.day1.maps;
 import java.util.*;
 
 public class _2MapDemo {

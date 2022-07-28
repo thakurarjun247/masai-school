@@ -1,4 +1,4 @@
-package sb101.web18;
+package sb101.web18.day1.maps;
 
 import java.util.Comparator;
 import java.util.Map;
@@ -18,17 +18,19 @@ public class _3TreeMap {
         Student s1=new Student(10, "one");
         Student s2=new Student(9, "two");
         Student s3=new Student(11, "three");
+        Student s4=new Student(11, "three");
         studentToRollNo.put( s1, 1);
         studentToRollNo.put(s2, 4);
-        studentToRollNo.put(s3, 0);
+        studentToRollNo.put(s3, 0);//inserted
+        studentToRollNo.put(s4, 5);//replace the previous one
         System.out.println(studentToRollNo);
 
     }
 }
-class StudentComparatorAscMarks<Student> implements Comparator<sb101.web18.Student>{
+class StudentComparatorAscMarks<Student> implements Comparator<sb101.web18.day1.maps.Student>{
 
     @Override
-    public int compare(sb101.web18.Student o1, sb101.web18.Student o2) {
+    public int compare(sb101.web18.day1.maps.Student o1, sb101.web18.day1.maps.Student o2) {
         if(o1.marks>o2.marks)
             return 1;
         else if(o1.marks<o2.marks)
