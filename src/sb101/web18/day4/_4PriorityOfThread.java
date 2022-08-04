@@ -22,5 +22,6 @@ public class _4PriorityOfThread {
 
         secondThread.start();
         thirdThread.start();
+        System.gc();
     }
 }
