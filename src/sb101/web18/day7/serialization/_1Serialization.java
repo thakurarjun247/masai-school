@@ -21,6 +21,10 @@ public class _1Serialization {
         A deserializedObjectOfA=(A) deserObject;
         System.out.println("object is deserialized");
         System.out.println(deserializedObjectOfA.i);
+
+        //we problem: the output of this?
+        System.out.println(deserializedObjectOfA.email);
+        System.out.println(deserializedObjectOfA.aBoolean);
        // objectOutputStream.writeObject("string");
 
         //be back by 2:50pm
@@ -30,6 +34,10 @@ public class _1Serialization {
 
 class A implements Serializable {
     int i=10;
+
+    //don't serialize this
+    transient String email="xyz@gmail.com";//null
+    transient boolean aBoolean=true;
 }
 
 
