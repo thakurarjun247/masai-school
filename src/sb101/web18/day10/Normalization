@@ -1,0 +1,96 @@
+
+Eg. Table:
+    Student(EnrollmentNumber, Email, Phone, Name, Age, City)
+            (1, a@gmail.com, 9999999999, zyz, 15, Agra)
+            CKs (uniquely identify, can be null) => email, phone, EnrollmentNumber
+            PK (EnrollmentNumber)
+
+            PK is always a CK.
+
+
+Primary Key: Key that identifies a row/record in a table. Non-null, unique. Only one PK.
+Candidate Key: Can be a candidate of becoming a Primary key. Can be null/nullable, uniquely identifies a row in a table.
+                There can be many CKs.
+
+Attribute aka Column
+row aka record aka tuple
+
+Prime Attribute=> Attributes that are part of the CKs: email, phone, EnrollmentNumber
+Non Prime Attibutes: Not part of any of the CKs: Name, Age, City
+
+Norm = refinement of data
+
+Redundancy => Repeated, duplicated
+Anomaly => problem with data and it's behaviour
+
+1NF=> Only single valued attibute aka atomic attribute, 2D table,
+
+Ways to convert to 2NF
+1. Intuition (from experience) : SRP=> Single Responsibility Principle.
+2. Mathematical Formulae (books, videos):
+    2.a Table should be already in 1NF
+    2.b Non prime attributes shouldn't depend on the subset of a candidate key.
+
+s1={1,3,4,5}
+s2 is a subset of s1=  {1,3,4,5}, {1,3,5}, {3,5}
+
+s3 {3,5,9}
+s3 is subset of s1? No
+Functional Dependency TeacherID -> Age
+
+first table - empnum , lastname,firstname
+second table - deptnum, deptname,depcity,depcountry
+third table: Connecting Table:  empdeptID, empnum, depnum
+
+Table represents a real world object aka Entity
+ER : Entity Relationships
+Relationships: 1 to 1 (country and capital city) ,
+               1 to M (country to States), M to 1 (states to country),
+               M to M (Teacher and Student)
+
+1 to 1 (country and capital city)
+    places(id, countryname, capitalcityname)
+    UUID
+
+1 to M (country to States)
+In-> MP, UP
+AU-> S, M
+
+    1 table (ID, countryname, statename) : Doesn't work
+               1, IN, (MP, UP)
+
+   3 tables: Really Needed? No
+            country(id, country)
+            state(id, state)
+            cs(id, couID, staID)
+
+    2 tables are good enough.
+                country(CountryID, countryname)
+                state(stateID, statename, countryID)
+                Country:
+                        1, India
+                        2, UK
+                State:
+                        1, UP,  1
+                        2, MP,  1
+
+M to M (Teacher and Student)
+
+            2 tables  WON'T WORK
+             Teacher:               TeacherID, TeacherName
+             Student:               StudentID, StudentName, TeacherID
+
+             3 tables:
+             student, teacher, studentteacherconnectingtable
+
+
+
+
+
+
+
+
+
+
+
+
