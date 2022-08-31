@@ -1,0 +1,38 @@
+Why Do we need to do design?
+Schema = scheme = structure = organization
+Schema includes: tables, views, indexes, meta data.
+
+Design a database for a bookstore:
+1. Ask for clarification
+2. Identify the entities: books, authors, category(genre)
+3. Identify the relationships (1toM)
+4. Convert them into form of tables
+5. Represent the relationships using PK, FK or connecting table (M to M)
+
+
+Apartment Rental DB design
+1. Apartment (1 apt can have many ten.)
+2. Building (1 building will have many apts)
+3. Tenants (1 tenant can have many apts.)
+
+apts-ten (m:m)
+buil-apts (1:M)
+Tables:
+Apartment, Building, Tenants, TenantsApartments
+
+
+Apartment(id, aptNumber, building_id ),
+ Building(id, buiAddress ),
+ Tenants(id, name, address)
+  TenantsApartments(tenId, aptID, id int)
+  Request(id, status, aptId, description)
+  Complexes()
+
+1. Write query to list the name of the tenants who own >1 apt?
+2.
+
+Advanced Topics:
+if-else
+
+1. SQL 1.5 hour.
+2. DSA with Java 1.5 hour.
