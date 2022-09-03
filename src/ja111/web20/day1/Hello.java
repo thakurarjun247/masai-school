@@ -8,7 +8,7 @@ public class Hello {
     * */
 
     //signature
-    public static void main(String[] stringArray) {
+    public static void main(String[] anything) {
         //it will insert empty line before the next statement.
         System.out.println("Hello Java");
         System.out.println(90);
@@ -17,7 +17,7 @@ public class Hello {
 
     }
 
-    static void multiplication(){
+    public static void multiplication(){
         System.out.println("inside the multiplication method");
         int a=10;
         int y=7;
