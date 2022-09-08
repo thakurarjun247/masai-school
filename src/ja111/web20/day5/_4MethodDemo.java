@@ -11,6 +11,8 @@ public class _4MethodDemo {
         System.out.println(simple.factorial(2));
         System.out.println(simple.sum(5,10));;
         //System.out.println(simple.methodName());
+
+        //use the classname for calling the static method.
         Simple.staticMethod();
 
     }
