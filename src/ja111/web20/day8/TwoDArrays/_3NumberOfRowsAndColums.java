@@ -1,4 +1,4 @@
-package ja111.web20.day8;
+package ja111.web20.day8.TwoDArrays;
 
 public class _3NumberOfRowsAndColums {
     public static void main(String[] args) {

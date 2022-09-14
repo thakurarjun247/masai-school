@@ -1,4 +1,4 @@
-package ja111.web20.problemsolving;
+package ja111.web20.day7.problemsolving;
 
 public class _2ObjectAsMethodInput {
     public static void main(String[] args) {
