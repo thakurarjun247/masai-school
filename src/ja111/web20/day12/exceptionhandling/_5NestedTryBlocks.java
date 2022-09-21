@@ -18,7 +18,7 @@ public class _5NestedTryBlocks {
                 }
 
                 // to handles ArithmeticException
-                catch (ArithmeticException e) {
+                catch (ArithmeticException e) { //try changing it to ArrIndexOutEx.
                     System.out.println("Arithmetic exception");
                     System.out.println(" inner catch block 2");
                 }
