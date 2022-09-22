@@ -48,3 +48,5 @@ public class _5IterateOverMap {
                 .forEach(key-> System.out.println(key +"->"+ map.get(key)));
     }
 }
+
+//TreeMap sortedmap : comparator
