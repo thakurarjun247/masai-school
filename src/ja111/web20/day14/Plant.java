@@ -14,4 +14,11 @@ public class Plant {
     }
     public Plant(){}
 
+    @Override
+    public String toString() {
+        return "Plant{" +
+                "height=" + height +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
