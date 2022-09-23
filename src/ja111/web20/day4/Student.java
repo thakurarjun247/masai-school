@@ -1,6 +1,12 @@
 package ja111.web20.day4;
 
 public class Student {
+    public Student(){}
+    public Student(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
     //state: variables
     int age; //? 4 bytes
     String name;
