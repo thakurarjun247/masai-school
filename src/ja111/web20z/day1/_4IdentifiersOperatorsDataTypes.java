@@ -70,6 +70,33 @@ public class _4IdentifiersOperatorsDataTypes {
         System.out.println(false ^ false);
         System.out.println(true ^ false);
 
+        //Data types
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE);
+        //who numbers: byte, short, int, long
+
+        //github
+        //install git locally
+        //point local to remote
+        //create remote repo
+
+        //decimal numbers
+        //float < double
+
+        double pie=3.14;
+        float anotherPie=3.14f;
+        float m=(float) 555.66;
+        System.out.println(Double.MIN_VALUE);
+        //Wrapper
+       // int n=3;
+        //is same as
+        Integer n=3;
+        //java is an OOP lang
+        Integer y=3;
+        y=n;
+        n=y;
+
+
 
     }
 }
