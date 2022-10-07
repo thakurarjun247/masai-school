@@ -1,6 +1,6 @@
 package ja111.web20z.day2;
 
-public class _2Statements {
+public class _2ConditionalStatements {
     //conditional statements:
     //if,
     // if-else,
@@ -34,6 +34,11 @@ public class _2Statements {
             default:
                 System.out.println(" wrong input");
         }
+
+
+        String name="Ruby";
+        //yes you can use String in switch-case.
+
     }
 
 
