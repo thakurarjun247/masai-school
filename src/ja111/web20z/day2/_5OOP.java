@@ -42,6 +42,10 @@ public class _5OOP {
     //variable: duration double, name: String
     //2 movie objects
 
+    // day 1, day 2, day 3
+    //remaining topics: static, boolean operator: not part of the Monday Evaluation
+    //Scanner: Take input from user.: Yes this will be
+
 
 }
 
