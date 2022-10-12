@@ -27,13 +27,5 @@ public class _6NestEggs {
 
 }
 
-class Nest {
-    int height;
-    String color;
-    Egg[] eggs; // =new Egg[2];
 
-}
-class Egg{
-    String color;
-    int size;
-}
+
