@@ -5,6 +5,7 @@ package ja111.web20z.day3;
 public class _2AccessingStaticMembers {
     public static void main(String[] args) {
         BankAccount account1= new BankAccount();
+
         account1.balance=11.7;
         //account1.bankName="City";
         BankAccount account2= new BankAccount();
@@ -15,12 +16,21 @@ public class _2AccessingStaticMembers {
         System.out.println(BankAccount.bankName);
 
 
+
     }
 }
 
 class BankAccount{
     Double balance;
     static String bankName="citi"; //city
+
+    public static String getBankName() {
+        return bankName;
+    }
+
+    public static void setBankName(String bankName) {
+        BankAccount.bankName = bankName;
+    }
 }
 
 
