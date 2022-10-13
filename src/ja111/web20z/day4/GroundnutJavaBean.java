@@ -1,6 +1,6 @@
 package ja111.web20z.day4;
 //Java Bean or a POJO
-public class Groundnut {
+public class GroundnutJavaBean {
     private String colorOfTheOuterShell;
     private Integer numberOfSeeds;
     //public getter and setter.
@@ -25,11 +25,11 @@ public class Groundnut {
     }
 
     //zero arg cons. or a default cons.
-    public Groundnut(){
+    public GroundnutJavaBean(){
 
     }
     //optional step
-    public Groundnut(String colorOfTheOuterShell, Integer numberOfSeeds) {
+    public GroundnutJavaBean(String colorOfTheOuterShell, Integer numberOfSeeds) {
         this.colorOfTheOuterShell = colorOfTheOuterShell;
         this.numberOfSeeds = numberOfSeeds;
     }

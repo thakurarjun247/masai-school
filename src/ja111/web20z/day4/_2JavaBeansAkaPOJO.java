@@ -11,4 +11,11 @@ public class _2JavaBeansAkaPOJO {
     //3. For each field there should be corresponding public getter and setter method.
     //4. I[t] should have zero argument constructor.
     //5. optional : I[t] may have parameterized constructor (it is not the minimum requirement)
+//### Advantages of JavaBean
+//
+//The following are the advantages of JavaBean
+//
+//- The JavaBean properties and methods can be exposed to another application.
+//- It provides an easiness to reuse the software components.
+
 }
