@@ -4,6 +4,7 @@ public class _3WeProblemReverseAString {
     public static void main(String[] args) {
 
     }
+    //homework
     static String reverse(String string){
         //don't use builtin functions
         //1. you work it out using a string

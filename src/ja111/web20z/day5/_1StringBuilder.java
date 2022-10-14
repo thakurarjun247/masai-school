@@ -23,7 +23,10 @@ public class _1StringBuilder {
         builder1=builder;
 
         builder1.compareTo(builder);
-
-
+//String vs StringBuilder
+        //1. immutable and mutable
+        //2. Nature of it: read-only vs read/write (dynamic)
+        //3. Speed of Concatenation: slow vs fast
+        "asdf".concat("asdfasdf");
     }
 }
