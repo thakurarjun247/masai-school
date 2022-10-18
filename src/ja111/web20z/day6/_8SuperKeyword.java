@@ -21,7 +21,9 @@ class Flower{
 class Lotus extends Flower{
     String color="Blue";
     Lotus(){
-        //super();
+        super();
+        //rule:
+        //the call to the super() is always the first statements in a cons. body.
         System.out.println("lotus cons. called");
 
     }
@@ -31,3 +33,4 @@ class Lotus extends Flower{
         System.out.println(super.color); //white
     }*/
 }
+
