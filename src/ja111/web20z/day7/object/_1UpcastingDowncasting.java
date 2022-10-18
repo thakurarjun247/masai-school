@@ -1,6 +1,4 @@
-package ja111.web20z.day7;
-
-import ja111.web20.day14.Plant;
+package ja111.web20z.day7.object;
 
 public class _1UpcastingDowncasting {
     public static void main(String[] args) {

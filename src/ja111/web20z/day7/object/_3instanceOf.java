@@ -1,4 +1,4 @@
-package ja111.web20z.day7;
+package ja111.web20z.day7.object;
 
 public class _3instanceOf {
     public static void main(String[] args) {
