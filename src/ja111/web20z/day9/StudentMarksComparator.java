@@ -8,7 +8,7 @@ public class StudentMarksComparator implements Comparator<Student> {
         if(s1.getMarks()>s2.getMarks())
             return 1;
         else if(s1.getMarks()<s2.getMarks())
-            return +1;
+            return -1;
         else
             return 0;
     }
