@@ -1,7 +1,10 @@
 package ja111.web20z.day9;
 
+import ja111.web20.day14.Plant;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class _9Generics {
     public static void main(String[] args) {
@@ -16,6 +19,8 @@ public class _9Generics {
         listOfStrings.add("asdfasdf");
         //type safety
        //listOfStrings.add(23432);
+        List<Student> students;
+        Map<Student, Plant> studentPlantMap;
 
 
     }
