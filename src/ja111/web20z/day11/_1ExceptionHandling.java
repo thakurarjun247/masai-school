@@ -23,7 +23,7 @@ public class _1ExceptionHandling {
 
         //- **Exception:Exception indicates conditions that a reasonable application might try to catch.
         //Types Of Exceptions:
-        //1. Checked (aka compile time exc., ): which inherit from Exception class
+        //1. Checked (aka compile time exc., ): which inherit from Exception class: FileNotFoundException
         //2. Unchecked(aka runtime exception) (which inherit from the RuntimeException class): e.g.ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException,
 
     }
